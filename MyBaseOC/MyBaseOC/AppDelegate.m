@@ -2,7 +2,7 @@
 //  AppDelegate.m
 //  MyBaseOC
 //
-//  Created by LIANDI on 2021/7/20.
+//  Created by dengwt on 2021/7/20.
 //
 
 #import "AppDelegate.h"

@@ -1,28 +1,16 @@
 PODS:
-  - AFNetworking (4.0.1):
-    - AFNetworking/NSURLSession (= 4.0.1)
-    - AFNetworking/Reachability (= 4.0.1)
-    - AFNetworking/Security (= 4.0.1)
-    - AFNetworking/Serialization (= 4.0.1)
-    - AFNetworking/UIKit (= 4.0.1)
-  - AFNetworking/NSURLSession (4.0.1):
-    - AFNetworking/Reachability
-    - AFNetworking/Security
-    - AFNetworking/Serialization
-  - AFNetworking/Reachability (4.0.1)
-  - AFNetworking/Security (4.0.1)
-  - AFNetworking/Serialization (4.0.1)
-  - AFNetworking/UIKit (4.0.1):
-    - AFNetworking/NSURLSession
-  - MJExtension (3.2.4)
-  - MJRefresh (3.6.1)
-  - SDWebImage (5.11.1):
-    - SDWebImage/Core (= 5.11.1)
-  - SDWebImage/Core (5.11.1)
-  - SVProgressHUD (2.2.5)
+  - Alamofire (5.10.2)
+  - MJExtension (3.4.2)
+  - MJRefresh (3.7.9)
+  - SDWebImage (5.20.0):
+    - SDWebImage/Core (= 5.20.0)
+  - SDWebImage/Core (5.20.0)
+  - SVProgressHUD (2.3.1):
+    - SVProgressHUD/Core (= 2.3.1)
+  - SVProgressHUD/Core (2.3.1)
 
 DEPENDENCIES:
-  - AFNetworking
+  - Alamofire
   - MJExtension
   - MJRefresh
   - SDWebImage
@@ -30,19 +18,19 @@ DEPENDENCIES:
 
 SPEC REPOS:
   trunk:
-    - AFNetworking
+    - Alamofire
     - MJExtension
     - MJRefresh
     - SDWebImage
     - SVProgressHUD
 
 SPEC CHECKSUMS:
-  AFNetworking: 7864c38297c79aaca1500c33288e429c3451fdce
-  MJExtension: 88e0900751b6cac8de1cf724ca9838a0b28d5acb
-  MJRefresh: d2c1970d1cf6e77fcfcdfe76c943dfab8dbfa5c1
-  SDWebImage: a7f831e1a65eb5e285e3fb046a23fcfbf08e696d
-  SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
+  Alamofire: 7193b3b92c74a07f85569e1a6c4f4237291e7496
+  MJExtension: e97d164cb411aa9795cf576093a1fa208b4a8dd8
+  MJRefresh: ff9e531227924c84ce459338414550a05d2aea78
+  SDWebImage: 73c6079366fea25fa4bb9640d5fb58f0893facd8
+  SVProgressHUD: 4837c74bdfe2e51e8821c397825996a8d7de6e22
 
-PODFILE CHECKSUM: 3fcc7484f1380c0312c1cd31e78020e617741dca
+PODFILE CHECKSUM: c9b4babbb8c3479e8872437353c19bd6a1618810
 
-COCOAPODS: 1.10.1
+COCOAPODS: 1.16.2

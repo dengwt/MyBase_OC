@@ -1,9 +1,9 @@
 # Acknowledgements
 This application makes use of the following third party libraries:
 
-## AFNetworking
+## Alamofire
 
-Copyright (c) 2011-2020 Alamofire Software Foundation (http://alamofire.org/)
+Copyright (c) 2014-2022 Alamofire Software Foundation (http://alamofire.org/)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -98,7 +98,7 @@ THE SOFTWARE.
 
 MIT License
 
-Copyright (c) 2011-2018 Sam Vermette, Tobias Tiemerding and contributors.
+Copyright (c) 2011-2023 Sam Vermette, Tobias Totzek and contributors.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

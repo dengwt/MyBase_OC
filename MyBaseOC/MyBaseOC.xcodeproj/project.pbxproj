@@ -3,11 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		11F1F90106399327445AE99B /* Pods_MyBaseOC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 243052B1245A38F36688A6C6 /* Pods_MyBaseOC.framework */; };
+		AC4014332D5DE26200C1D220 /* SwizzleUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = AC4014322D5DE26200C1D220 /* SwizzleUtils.m */; };
 		AC9C874C26A6716F00FA58FA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AC9C874B26A6716F00FA58FA /* AppDelegate.m */; };
 		AC9C874F26A6716F00FA58FA /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AC9C874E26A6716F00FA58FA /* SceneDelegate.m */; };
 		AC9C875226A6716F00FA58FA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC9C875126A6716F00FA58FA /* ViewController.m */; };
@@ -20,6 +21,8 @@
 /* Begin PBXFileReference section */
 		243052B1245A38F36688A6C6 /* Pods_MyBaseOC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyBaseOC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		63DCCA087BBD2987A7B75976 /* Pods-MyBaseOC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyBaseOC.release.xcconfig"; path = "Target Support Files/Pods-MyBaseOC/Pods-MyBaseOC.release.xcconfig"; sourceTree = "<group>"; };
+		AC4014312D5DE24700C1D220 /* SwizzleUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwizzleUtils.h; sourceTree = "<group>"; };
+		AC4014322D5DE26200C1D220 /* SwizzleUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SwizzleUtils.m; sourceTree = "<group>"; };
 		AC9C874726A6716F00FA58FA /* MyBaseOC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyBaseOC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC9C874A26A6716F00FA58FA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		AC9C874B26A6716F00FA58FA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -53,8 +56,16 @@
 				FA1E447A441333A56F19DBBC /* Pods-MyBaseOC.debug.xcconfig */,
 				63DCCA087BBD2987A7B75976 /* Pods-MyBaseOC.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		AC4014302D5DE15F00C1D220 /* Uitls */ = {
+			isa = PBXGroup;
+			children = (
+				AC4014312D5DE24700C1D220 /* SwizzleUtils.h */,
+				AC4014322D5DE26200C1D220 /* SwizzleUtils.m */,
+			);
+			path = Uitls;
 			sourceTree = "<group>";
 		};
 		AC9C873E26A6716F00FA58FA = {
@@ -78,6 +89,7 @@
 		AC9C874926A6716F00FA58FA /* MyBaseOC */ = {
 			isa = PBXGroup;
 			children = (
+				AC4014302D5DE15F00C1D220 /* Uitls */,
 				AC9C876726A674A700FA58FA /* Models */,
 				AC9C876626A6749600FA58FA /* Config */,
 				AC9C876526A6748A00FA58FA /* Extensions */,
@@ -265,6 +277,7 @@
 				AC9C875226A6716F00FA58FA /* ViewController.m in Sources */,
 				AC9C874C26A6716F00FA58FA /* AppDelegate.m in Sources */,
 				AC9C875D26A6717000FA58FA /* main.m in Sources */,
+				AC4014332D5DE26200C1D220 /* SwizzleUtils.m in Sources */,
 				AC9C874F26A6716F00FA58FA /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -412,7 +425,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = SRSK58FA7K;
 				INFOPLIST_FILE = MyBaseOC/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -432,7 +445,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = SRSK58FA7K;
 				INFOPLIST_FILE = MyBaseOC/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
