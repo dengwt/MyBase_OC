@@ -7,7 +7,7 @@
 
 #import "SwizzleUtils.h"
 
-@interface SwizzleUtils()
+@interface SwizzleUtils ()
 
 @end
 
@@ -21,26 +21,27 @@
 
     // Check if the original method exists
     if (!originalMethod) {
-        NSLog(@"Original method not found for selector: %@", NSStringFromSelector(originalSelector));
+        NSLog(@"Original method not found for selector: %@",
+              NSStringFromSelector(originalSelector));
         return;
     }
 
     // Check if the swizzled method exists
     if (!swizzledMethod) {
-        NSLog(@"Swizzled method not found for selector: %@", NSStringFromSelector(swizzledSelector));
+        NSLog(@"Swizzled method not found for selector: %@",
+              NSStringFromSelector(swizzledSelector));
         return;
     }
 
     // Attempt to add the swizzled method to the class
-    BOOL didAddMethod = class_addMethod(class,
-                                        originalSelector,
-                                        method_getImplementation(swizzledMethod),
-                                        method_getTypeEncoding(swizzledMethod));
+    BOOL didAddMethod = class_addMethod(
+        class, originalSelector, method_getImplementation(swizzledMethod),
+        method_getTypeEncoding(swizzledMethod));
 
     if (didAddMethod) {
-        // If the method was added, replace the swizzled method with the original implementation
-        class_replaceMethod(class,
-                            swizzledSelector,
+        // If the method was added, replace the swizzled method with the
+        // original implementation
+        class_replaceMethod(class, swizzledSelector,
                             method_getImplementation(originalMethod),
                             method_getTypeEncoding(originalMethod));
     } else {

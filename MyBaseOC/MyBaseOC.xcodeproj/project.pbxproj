@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		11F1F90106399327445AE99B /* Pods_MyBaseOC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 243052B1245A38F36688A6C6 /* Pods_MyBaseOC.framework */; };
+		AC21F5492D8BB2EA00E305FD /* GCDUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = AC21F5482D8BB2EA00E305FD /* GCDUtils.m */; };
 		AC4014332D5DE26200C1D220 /* SwizzleUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = AC4014322D5DE26200C1D220 /* SwizzleUtils.m */; };
 		AC9C874C26A6716F00FA58FA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AC9C874B26A6716F00FA58FA /* AppDelegate.m */; };
 		AC9C874F26A6716F00FA58FA /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AC9C874E26A6716F00FA58FA /* SceneDelegate.m */; };
@@ -16,11 +16,14 @@
 		AC9C875726A6717000FA58FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC9C875626A6717000FA58FA /* Assets.xcassets */; };
 		AC9C875A26A6717000FA58FA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC9C875826A6717000FA58FA /* LaunchScreen.storyboard */; };
 		AC9C875D26A6717000FA58FA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AC9C875C26A6717000FA58FA /* main.m */; };
+		ACD44FC02D76D4000052EADB /* RuntimeUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = ACD44FBF2D76D4000052EADB /* RuntimeUtils.m */; };
+		ACD44FC42D76DAE90052EADB /* NSObject+Model.m in Sources */ = {isa = PBXBuildFile; fileRef = ACD44FC32D76DAE90052EADB /* NSObject+Model.m */; };
+		ACD44FC72D76DBD90052EADB /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = ACD44FC62D76DBD90052EADB /* Person.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		243052B1245A38F36688A6C6 /* Pods_MyBaseOC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyBaseOC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		63DCCA087BBD2987A7B75976 /* Pods-MyBaseOC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyBaseOC.release.xcconfig"; path = "Target Support Files/Pods-MyBaseOC/Pods-MyBaseOC.release.xcconfig"; sourceTree = "<group>"; };
+		AC21F5472D8BB2EA00E305FD /* GCDUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GCDUtils.h; sourceTree = "<group>"; };
+		AC21F5482D8BB2EA00E305FD /* GCDUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GCDUtils.m; sourceTree = "<group>"; };
 		AC4014312D5DE24700C1D220 /* SwizzleUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwizzleUtils.h; sourceTree = "<group>"; };
 		AC4014322D5DE26200C1D220 /* SwizzleUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SwizzleUtils.m; sourceTree = "<group>"; };
 		AC9C874726A6716F00FA58FA /* MyBaseOC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyBaseOC.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -35,7 +38,12 @@
 		AC9C875926A6717000FA58FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AC9C875B26A6717000FA58FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AC9C875C26A6717000FA58FA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		FA1E447A441333A56F19DBBC /* Pods-MyBaseOC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyBaseOC.debug.xcconfig"; path = "Target Support Files/Pods-MyBaseOC/Pods-MyBaseOC.debug.xcconfig"; sourceTree = "<group>"; };
+		ACD44FBE2D76D4000052EADB /* RuntimeUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RuntimeUtils.h; sourceTree = "<group>"; };
+		ACD44FBF2D76D4000052EADB /* RuntimeUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RuntimeUtils.m; sourceTree = "<group>"; };
+		ACD44FC22D76DAE90052EADB /* NSObject+Model.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+Model.h"; sourceTree = "<group>"; };
+		ACD44FC32D76DAE90052EADB /* NSObject+Model.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Model.m"; sourceTree = "<group>"; };
+		ACD44FC52D76DBD90052EADB /* Person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		ACD44FC62D76DBD90052EADB /* Person.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,7 +51,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				11F1F90106399327445AE99B /* Pods_MyBaseOC.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -53,8 +60,6 @@
 		2F03101636BF52462F19DC12 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				FA1E447A441333A56F19DBBC /* Pods-MyBaseOC.debug.xcconfig */,
-				63DCCA087BBD2987A7B75976 /* Pods-MyBaseOC.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -64,6 +69,10 @@
 			children = (
 				AC4014312D5DE24700C1D220 /* SwizzleUtils.h */,
 				AC4014322D5DE26200C1D220 /* SwizzleUtils.m */,
+				ACD44FBE2D76D4000052EADB /* RuntimeUtils.h */,
+				ACD44FBF2D76D4000052EADB /* RuntimeUtils.m */,
+				AC21F5472D8BB2EA00E305FD /* GCDUtils.h */,
+				AC21F5482D8BB2EA00E305FD /* GCDUtils.m */,
 			);
 			path = Uitls;
 			sourceTree = "<group>";
@@ -74,7 +83,6 @@
 				AC9C874926A6716F00FA58FA /* MyBaseOC */,
 				AC9C874826A6716F00FA58FA /* Products */,
 				2F03101636BF52462F19DC12 /* Pods */,
-				EC9ABA58A2F02A91A9839B3A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -89,6 +97,7 @@
 		AC9C874926A6716F00FA58FA /* MyBaseOC */ = {
 			isa = PBXGroup;
 			children = (
+				ACD44FC12D76DA5D0052EADB /* Categories */,
 				AC4014302D5DE15F00C1D220 /* Uitls */,
 				AC9C876726A674A700FA58FA /* Models */,
 				AC9C876626A6749600FA58FA /* Config */,
@@ -142,6 +151,8 @@
 		AC9C876726A674A700FA58FA /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				ACD44FC52D76DBD90052EADB /* Person.h */,
+				ACD44FC62D76DBD90052EADB /* Person.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -153,12 +164,13 @@
 			path = Cells;
 			sourceTree = "<group>";
 		};
-		EC9ABA58A2F02A91A9839B3A /* Frameworks */ = {
+		ACD44FC12D76DA5D0052EADB /* Categories */ = {
 			isa = PBXGroup;
 			children = (
-				243052B1245A38F36688A6C6 /* Pods_MyBaseOC.framework */,
+				ACD44FC22D76DAE90052EADB /* NSObject+Model.h */,
+				ACD44FC32D76DAE90052EADB /* NSObject+Model.m */,
 			);
-			name = Frameworks;
+			path = Categories;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -168,11 +180,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AC9C876026A6717000FA58FA /* Build configuration list for PBXNativeTarget "MyBaseOC" */;
 			buildPhases = (
-				700A745BF9DAE48D57D1BB05 /* [CP] Check Pods Manifest.lock */,
 				AC9C874326A6716F00FA58FA /* Sources */,
 				AC9C874426A6716F00FA58FA /* Frameworks */,
 				AC9C874526A6716F00FA58FA /* Resources */,
-				3AE3D8979B3D6DCB522E84C5 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -189,7 +199,8 @@
 		AC9C873F26A6716F00FA58FA /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 1250;
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1620;
 				TargetAttributes = {
 					AC9C874626A6716F00FA58FA = {
 						CreatedOnToolsVersion = 12.5.1;
@@ -227,48 +238,6 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		3AE3D8979B3D6DCB522E84C5 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-MyBaseOC/Pods-MyBaseOC-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-MyBaseOC/Pods-MyBaseOC-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MyBaseOC/Pods-MyBaseOC-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		700A745BF9DAE48D57D1BB05 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-MyBaseOC-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
 		AC9C874326A6716F00FA58FA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -276,8 +245,12 @@
 			files = (
 				AC9C875226A6716F00FA58FA /* ViewController.m in Sources */,
 				AC9C874C26A6716F00FA58FA /* AppDelegate.m in Sources */,
+				ACD44FC72D76DBD90052EADB /* Person.m in Sources */,
+				AC21F5492D8BB2EA00E305FD /* GCDUtils.m in Sources */,
+				ACD44FC42D76DAE90052EADB /* NSObject+Model.m in Sources */,
 				AC9C875D26A6717000FA58FA /* main.m in Sources */,
 				AC4014332D5DE26200C1D220 /* SwizzleUtils.m in Sources */,
+				ACD44FC02D76D4000052EADB /* RuntimeUtils.m in Sources */,
 				AC9C874F26A6716F00FA58FA /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -341,6 +314,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -400,6 +374,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -418,19 +393,18 @@
 		};
 		AC9C876126A6717000FA58FA /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FA1E447A441333A56F19DBBC /* Pods-MyBaseOC.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = SRSK58FA7K;
+				DEVELOPMENT_TEAM = 6Q4PW39HJB;
 				INFOPLIST_FILE = MyBaseOC/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.cn.dengwt.base.MyBaseOC;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cn.dengwt.base.MyBaseOC1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -438,12 +412,11 @@
 		};
 		AC9C876226A6717000FA58FA /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 63DCCA087BBD2987A7B75976 /* Pods-MyBaseOC.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = SRSK58FA7K;
+				DEVELOPMENT_TEAM = 6Q4PW39HJB;
 				INFOPLIST_FILE = MyBaseOC/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
