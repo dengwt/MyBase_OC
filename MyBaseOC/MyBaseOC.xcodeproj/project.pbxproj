@@ -8,7 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		AC21F5492D8BB2EA00E305FD /* GCDUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = AC21F5482D8BB2EA00E305FD /* GCDUtils.m */; };
+		AC21F54D2D8D00D700E305FD /* DeadLocks.m in Sources */ = {isa = PBXBuildFile; fileRef = AC21F54C2D8D00D700E305FD /* DeadLocks.m */; };
 		AC4014332D5DE26200C1D220 /* SwizzleUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = AC4014322D5DE26200C1D220 /* SwizzleUtils.m */; };
+		AC9BAB442D9B7E6D00AD5165 /* DataPersistence.m in Sources */ = {isa = PBXBuildFile; fileRef = AC9BAB432D9B7E6D00AD5165 /* DataPersistence.m */; };
+		AC9BAB472D9B833000AD5165 /* SavedData.m in Sources */ = {isa = PBXBuildFile; fileRef = AC9BAB462D9B833000AD5165 /* SavedData.m */; };
 		AC9C874C26A6716F00FA58FA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AC9C874B26A6716F00FA58FA /* AppDelegate.m */; };
 		AC9C874F26A6716F00FA58FA /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AC9C874E26A6716F00FA58FA /* SceneDelegate.m */; };
 		AC9C875226A6716F00FA58FA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC9C875126A6716F00FA58FA /* ViewController.m */; };
@@ -24,8 +27,14 @@
 /* Begin PBXFileReference section */
 		AC21F5472D8BB2EA00E305FD /* GCDUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GCDUtils.h; sourceTree = "<group>"; };
 		AC21F5482D8BB2EA00E305FD /* GCDUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GCDUtils.m; sourceTree = "<group>"; };
+		AC21F54B2D8D00D700E305FD /* DeadLocks.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DeadLocks.h; sourceTree = "<group>"; };
+		AC21F54C2D8D00D700E305FD /* DeadLocks.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DeadLocks.m; sourceTree = "<group>"; };
 		AC4014312D5DE24700C1D220 /* SwizzleUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwizzleUtils.h; sourceTree = "<group>"; };
 		AC4014322D5DE26200C1D220 /* SwizzleUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SwizzleUtils.m; sourceTree = "<group>"; };
+		AC9BAB422D9B7E6D00AD5165 /* DataPersistence.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DataPersistence.h; sourceTree = "<group>"; };
+		AC9BAB432D9B7E6D00AD5165 /* DataPersistence.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DataPersistence.m; sourceTree = "<group>"; };
+		AC9BAB452D9B833000AD5165 /* SavedData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SavedData.h; sourceTree = "<group>"; };
+		AC9BAB462D9B833000AD5165 /* SavedData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SavedData.m; sourceTree = "<group>"; };
 		AC9C874726A6716F00FA58FA /* MyBaseOC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyBaseOC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC9C874A26A6716F00FA58FA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		AC9C874B26A6716F00FA58FA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -64,6 +73,15 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		AC21F54A2D8D00C000E305FD /* Samples */ = {
+			isa = PBXGroup;
+			children = (
+				AC21F54B2D8D00D700E305FD /* DeadLocks.h */,
+				AC21F54C2D8D00D700E305FD /* DeadLocks.m */,
+			);
+			path = Samples;
+			sourceTree = "<group>";
+		};
 		AC4014302D5DE15F00C1D220 /* Uitls */ = {
 			isa = PBXGroup;
 			children = (
@@ -73,6 +91,8 @@
 				ACD44FBF2D76D4000052EADB /* RuntimeUtils.m */,
 				AC21F5472D8BB2EA00E305FD /* GCDUtils.h */,
 				AC21F5482D8BB2EA00E305FD /* GCDUtils.m */,
+				AC9BAB422D9B7E6D00AD5165 /* DataPersistence.h */,
+				AC9BAB432D9B7E6D00AD5165 /* DataPersistence.m */,
 			);
 			path = Uitls;
 			sourceTree = "<group>";
@@ -97,6 +117,7 @@
 		AC9C874926A6716F00FA58FA /* MyBaseOC */ = {
 			isa = PBXGroup;
 			children = (
+				AC21F54A2D8D00C000E305FD /* Samples */,
 				ACD44FC12D76DA5D0052EADB /* Categories */,
 				AC4014302D5DE15F00C1D220 /* Uitls */,
 				AC9C876726A674A700FA58FA /* Models */,
@@ -153,6 +174,8 @@
 			children = (
 				ACD44FC52D76DBD90052EADB /* Person.h */,
 				ACD44FC62D76DBD90052EADB /* Person.m */,
+				AC9BAB452D9B833000AD5165 /* SavedData.h */,
+				AC9BAB462D9B833000AD5165 /* SavedData.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -246,9 +269,12 @@
 				AC9C875226A6716F00FA58FA /* ViewController.m in Sources */,
 				AC9C874C26A6716F00FA58FA /* AppDelegate.m in Sources */,
 				ACD44FC72D76DBD90052EADB /* Person.m in Sources */,
+				AC9BAB472D9B833000AD5165 /* SavedData.m in Sources */,
+				AC9BAB442D9B7E6D00AD5165 /* DataPersistence.m in Sources */,
 				AC21F5492D8BB2EA00E305FD /* GCDUtils.m in Sources */,
 				ACD44FC42D76DAE90052EADB /* NSObject+Model.m in Sources */,
 				AC9C875D26A6717000FA58FA /* main.m in Sources */,
+				AC21F54D2D8D00D700E305FD /* DeadLocks.m in Sources */,
 				AC4014332D5DE26200C1D220 /* SwizzleUtils.m in Sources */,
 				ACD44FC02D76D4000052EADB /* RuntimeUtils.m in Sources */,
 				AC9C874F26A6716F00FA58FA /* SceneDelegate.m in Sources */,
@@ -404,7 +430,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.cn.dengwt.base.MyBaseOC1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cn.dengwt.base.MyBaseOC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -423,7 +449,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.cn.dengwt.base.MyBaseOC;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cn.dengwt.base.MyBaseOC1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

@@ -2,7 +2,7 @@
 //  NSObject+Model.m
 //  MyBaseOC
 //
-//  Created by LIANDI on 2025/3/4.
+//  Created by dengwt on 2025/3/4.
 //
 
 #import "NSObject+Model.h"

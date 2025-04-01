@@ -2,10 +2,16 @@
 //  GCDUtils.m
 //  MyBaseOC
 //
-//  Created by LIANDI on 2025/3/20.
+//  Created by dengwt on 2025/3/20.
 //
 
 #import "GCDUtils.h"
+
+@interface GCDUtils ()
+
+@property(assign, nonatomic) int ticketSurplusCount;
+
+@end
 
 @implementation GCDUtils
 
@@ -17,8 +23,7 @@ dispatch_semaphore_t semaphoreLock;
 - (void)syncConcurrent {
     NSLog(@"current thread:%@", [NSThread currentThread]);
     NSLog(@"syncConcurrent---begin");
-    dispatch_queue_t queue =
-        dispatch_queue_create("testQueue", DISPATCH_QUEUE_CONCURRENT);
+    dispatch_queue_t queue = dispatch_queue_create("testQueue", DISPATCH_QUEUE_CONCURRENT);
 
     dispatch_sync(queue, ^{
       [NSThread sleepForTimeInterval:2];          // 模拟耗时操作
@@ -45,8 +50,7 @@ dispatch_semaphore_t semaphoreLock;
 - (void)asyncConcurrent {
     NSLog(@"current thread:%@", [NSThread currentThread]);
     NSLog(@"syncConcurrent---begin");
-    dispatch_queue_t queue =
-        dispatch_queue_create("testQueue", DISPATCH_QUEUE_CONCURRENT);
+    dispatch_queue_t queue = dispatch_queue_create("testQueue", DISPATCH_QUEUE_CONCURRENT);
 
     dispatch_async(queue, ^{
       [NSThread sleepForTimeInterval:2];          // 模拟耗时操作
@@ -73,8 +77,7 @@ dispatch_semaphore_t semaphoreLock;
 - (void)syncSerial {
     NSLog(@"current thread:%@", [NSThread currentThread]);
     NSLog(@"syncSerial---begin");
-    dispatch_queue_t queue =
-        dispatch_queue_create("testQueue", DISPATCH_QUEUE_SERIAL);
+    dispatch_queue_t queue = dispatch_queue_create("testQueue", DISPATCH_QUEUE_SERIAL);
 
     dispatch_sync(queue, ^{
       [NSThread sleepForTimeInterval:2];          // 模拟耗时操作
@@ -101,8 +104,7 @@ dispatch_semaphore_t semaphoreLock;
 - (void)asyncSerial {
     NSLog(@"current thread:%@", [NSThread currentThread]);
     NSLog(@"asyncSerial---begin");
-    dispatch_queue_t queue =
-        dispatch_queue_create("testQueue", DISPATCH_QUEUE_SERIAL);
+    dispatch_queue_t queue = dispatch_queue_create("testQueue", DISPATCH_QUEUE_SERIAL);
 
     dispatch_async(queue, ^{
       [NSThread sleepForTimeInterval:2];          // 模拟耗时操作
@@ -205,8 +207,7 @@ dispatch_semaphore_t semaphoreLock;
  * 栅栏方法 dispatch_barrier_async
  */
 - (void)barrier {
-    dispatch_queue_t queue =
-        dispatch_queue_create("testQueue", DISPATCH_QUEUE_CONCURRENT);
+    dispatch_queue_t queue = dispatch_queue_create("testQueue", DISPATCH_QUEUE_CONCURRENT);
 
     dispatch_async(queue, ^{
       [NSThread sleepForTimeInterval:2];          // 模拟耗时操作
@@ -267,14 +268,12 @@ dispatch_semaphore_t semaphoreLock;
 
     dispatch_group_t group = dispatch_group_create();
 
-    dispatch_group_async(
-        group, dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+    dispatch_group_async(group, dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
           [NSThread sleepForTimeInterval:2];          // 模拟耗时操作
           NSLog(@"1---%@", [NSThread currentThread]); // 打印当前线程
         });
 
-    dispatch_group_async(
-        group, dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+    dispatch_group_async(group, dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
           [NSThread sleepForTimeInterval:2];          // 模拟耗时操作
           NSLog(@"2---%@", [NSThread currentThread]); // 打印当前线程
         });
@@ -296,8 +295,7 @@ dispatch_semaphore_t semaphoreLock;
     NSLog(@"group---begin");
 
     dispatch_group_t group = dispatch_group_create();
-    dispatch_queue_t queue =
-        dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
+    dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
     dispatch_group_enter(group);
     dispatch_async(queue, ^{
       [NSThread sleepForTimeInterval:2];          // 模拟耗时操作
@@ -332,14 +330,12 @@ dispatch_semaphore_t semaphoreLock;
 
     dispatch_group_t group = dispatch_group_create();
 
-    dispatch_group_async(
-        group, dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+    dispatch_group_async(group, dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
           [NSThread sleepForTimeInterval:2];          // 模拟耗时操作
           NSLog(@"1---%@", [NSThread currentThread]); // 打印当前线程
         });
 
-    dispatch_group_async(
-        group, dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+    dispatch_group_async(group, dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
           [NSThread sleepForTimeInterval:2];          // 模拟耗时操作
           NSLog(@"2---%@", [NSThread currentThread]); // 打印当前线程
         });
